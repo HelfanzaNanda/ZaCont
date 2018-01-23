@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item android:title="Zakat Fitrah">
+        <menu>
+            <item
+                android:id="@+id/itemCount"
+                android:icon="@drawable/ic_zfitr"
+                android:title="Zakat Fitrah" />
+            <item
+                android:id="@+id/itemListZf"
+                android:icon="@drawable/ic_list"
+                android:title="List Zakat Fitrah" />
+            <item
+                android:id="@+id/itemHukumZf"
+                android:icon="@drawable/law"
+                android:title="Hukum Zakat Fitrah" />
+
+        </menu>
+
+    </item>
+
+    
+
+    <item android:title="Others">
+        <menu>
+            <item
+                android:id="@+id/itemPetunjuk"
+                android:layout_width="match_parent"
+                android:icon="@drawable/ic_petunjuk"
+                android:title="Panduan Zakat" />
+            <item
+                android:id="@+id/itemAbout"
+                android:icon="@drawable/ic_info"
+                android:title="Tentang" />
+        </menu>
+    </item>
+
+</menu>

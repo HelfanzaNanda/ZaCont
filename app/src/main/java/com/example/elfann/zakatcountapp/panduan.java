@@ -1,0 +1,30 @@
+package com.example.elfann.zakatcountapp;
+
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+import android.webkit.WebSettings;
+import android.webkit.WebView;
+import android.webkit.WebViewClient;
+
+public class panduan extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_panduan);
+
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
+        WebView webView = findViewById(R.id.webViewPanduan);
+        WebSettings ws = webView.getSettings();
+        ws.setJavaScriptEnabled(true);
+        webView.setWebViewClient(new WebViewClient() {
+            @Override
+            public boolean shouldOverrideUrlLoading(WebView view, String url) {
+                view.loadUrl(url);
+                return super.shouldOverrideUrlLoading(view, url);
+            }
+        });
+        webView.loadUrl("https://muslim.or.id/9427-panduan-zakat-1-keutamaan-menunaikan-zakat.html");
+    }
+}
